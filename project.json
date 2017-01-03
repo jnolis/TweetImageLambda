@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "outputName": "TweetImageLambda",
+    "emitEntryPoint": true,
+    "compilerName": "fsc",
+    "compile": {
+      "includeFiles": [
+        "Program.fs"
+      ]
+    },
+    "copyToOutput": {
+      "includeFiles": [
+        "config.json"
+      ]
+    }
+  },
+  "publishOptions": {
+    "includeFiles": [
+        "config.json"
+      ]
+    
+  },
+   
+  "dependencies": {
+    "Newtonsoft.Json": "9.0.1",
+    "TweetinviAPI": "1.2.0",
+    "Amazon.Lambda.Core": "1.0.0*",
+    "Amazon.Lambda.Serialization.Json": "1.0.0",
+ 
+    "Amazon.Lambda.Tools" : {
+      "type" :"build",
+      "version":"1.0.0-preview1"
+    }
+  },
+  
+  "tools": {
+    "dotnet-compile-fsc": "1.0.0-preview2.1-*",
+    "Amazon.Lambda.Tools" : "1.0.0-preview1"
+  },
+  "frameworks": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.1.0"
+        },
+        "Microsoft.FSharp.Core.netcore": "1.0.0-alpha-160629"
+      }
+    }
+  }
+}
