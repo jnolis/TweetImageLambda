@@ -1,0 +1,8 @@
+{
+    "TweetImageUrl": "http://placekitten.com/g/200/300",
+    "TweetText": "Cat image!",
+    "ConsumerKey": "[YOUR CONSUMER KEY]",
+    "ConsumerSecret": "[YOUR CONSUMER SECRET]",
+    "AccessToken": "[YOUR ACCESS TOKEN]",
+    "AccessTokenSecret": "[YOUR ACCESS TOKEN SECRET]"
+}
